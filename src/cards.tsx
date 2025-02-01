@@ -1,8 +1,8 @@
-import cardImage1 from './assets/images/card-1.webp';
-import cardImage2 from './assets/images/card-2.webp';
-import cardImage3 from './assets/images/card-3.webp';
-import cardImage4 from './assets/images/card-4.webp';
-import cardImage5 from './assets/images/card-5.webp';
+import acronymSearch from './assets/images/acronymSearch.webp';
+import oneResponse from './assets/images/oneResponse.webp';
+import cluedin from './assets/images/cluedin.webp';
+import codesplanation from './assets/images/codesplanation.webp';
+import portfolio from './assets/images/portfolio.webp';
 
 export const cards = [
   {
@@ -13,7 +13,7 @@ export const cards = [
       subtitle: 'Pioneering data integration solutions',
     },
     img: {
-      src: cardImage1,
+      src: cluedin,
       alt: 'Man holding laptop showing software integration',
     },
   },
@@ -25,7 +25,7 @@ export const cards = [
       subtitle: 'Medical patient data application',
     },
     img: {
-      src: cardImage2,
+      src: oneResponse,
       alt: 'Ambulance moving fast with emergency lights on',
     },
   },
@@ -37,7 +37,7 @@ export const cards = [
       subtitle: 'Defence industry acronym search web application',
     },
     img: {
-      src: cardImage3,
+      src: acronymSearch,
       alt: 'Different hands surrounding an iPad',
     },
   },
@@ -49,7 +49,7 @@ export const cards = [
       subtitle: 'Learning tool for code explanation',
     },
     img: {
-      src: cardImage4,
+      src: codesplanation,
       alt: 'Varied lines of code displayed on a computer screen',
     },
   },
@@ -61,7 +61,7 @@ export const cards = [
       subtitle: 'Personal portfolio website',
     },
     img: {
-      src: cardImage5,
+      src: portfolio,
       alt: 'Hand holding a lightbulb out towards the sky',
     },
   },

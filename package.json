@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@fontsource/mulish": "^5.1.1",
+    "@fontsource/source-code-pro": "^5.1.1",
     "@gsap/react": "^2.1.2",
     "@hookform/resolvers": "^3.10.0",
     "@studio-freight/react-lenis": "^0.0.47",
