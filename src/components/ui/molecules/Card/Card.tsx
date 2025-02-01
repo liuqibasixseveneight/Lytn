@@ -1,22 +1,25 @@
+import { CardContent, CardImg, CardInner, CardWrapper } from './Card.styles';
 import { type CardProps } from './types';
 
 const Card = ({
   id,
+  name,
   labels: { title, subtitle },
   img: { src, alt },
 }: CardProps) => {
   return (
-    <div className='card' id={`card-${id + 1}`}>
-      <div className='card-inner'>
-        <div className='card-content'>
-          <h1>{title}</h1>
+    <CardWrapper className='card' id={`card-${id + 1}`} $name={name}>
+      <CardInner className='card-inner' $name={name} $imgSrc={src}>
+        <CardContent className='card-content'>
+          <h1 className='heading'>{title}</h1>
           <p>{subtitle}</p>
-        </div>
-        <div className='card-img'>
+        </CardContent>
+
+        <CardImg className='card-img'>
           <img src={src} alt={alt} />
-        </div>
-      </div>
-    </div>
+        </CardImg>
+      </CardInner>
+    </CardWrapper>
   );
 };
 

@@ -4,9 +4,10 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/all';
 
 import { AppWrapper } from './App.styles';
-import heroImage from './assets/images/hero.webp';
 import { cards } from './cards';
-import { Card } from './components/ui';
+import { Navbar, RenderCards } from './components/ui';
+import { Home } from './components/modules/home';
+import { About } from './components/modules/about';
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -65,22 +66,19 @@ function App() {
   return (
     <>
       <AppWrapper className='app' ref={containerRef}>
-        <section className='hero'>
-          <img src={heroImage} alt='Hero' />
-        </section>
+        <Navbar />
+        <Home />
+        <About />
 
         <section className='intro'>
           <h1>Creating unique web experiences.</h1>
         </section>
 
         <section className='cards'>
-          {cards?.map((card, index) => {
-            const { id, name } = card;
-            return <Card key={`${id}-${name}-${index}`} {...card} />;
-          })}
+          <RenderCards cards={cards} />
         </section>
         <section className='outro'>
-          <h1>Let's build something great together.</h1>
+          <h1 className='heading'>Let's build something great together.</h1>
         </section>
       </AppWrapper>
     </>
